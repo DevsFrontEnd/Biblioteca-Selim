@@ -1,0 +1,260 @@
+:root{
+    --azul-selim: rgb(4, 4, 122);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* header */
+
+header{
+    z-index: 900;
+    min-width: 95%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding-top: 20px;
+}
+
+.header-pt1{
+    display: flex;
+    padding: 20px;
+    margin-top: 10px;
+    justify-content: space-between;
+    border-top: solid 1px rgb(155, 154, 154);
+    text-align: justify;
+}
+
+.header-pt1 img{
+    width: 60px;
+    padding-right: 10px;
+    border-right: solid 1px rgb(122, 122, 122);
+    margin-right: 10px;
+}
+
+.links-header a{
+    background-color: rgb(4, 4, 172);
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    top: 20px;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.escola{
+   display: flex;
+}
+
+.aling{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.menu{
+    background-color: var(--azul-selim);
+    width: 250px;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    position: fixed;
+    padding-top: 20px;
+    box-shadow: inset 0px 0px 10px black;
+    font-family: sans-serif;
+}
+
+.header-pt2{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.header-pt2 a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.botao-abrir-menu,
+.botao-fechar-menu{
+    width: 25px;
+    position: relative;
+    align-self: flex-end;
+    margin: 30px;
+    margin-top: 0;
+}
+
+.pesquisa-header{
+    background-color: rgb(228, 227, 227);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 25px;
+}
+
+.titulo-header{
+    display: flex;
+}
+
+.abrir a{
+    color: var(--azul-selim);
+}
+
+.menu a{
+    margin-bottom: 15px;
+}
+
+/* index */
+.imagem-principal{
+    text-align: center;
+}
+
+.imagem-principal img{
+    margin-top: 30px;
+    width: 90vw;
+}
+
+.titulo-index{
+    margin-left: 7vw;
+    margin-top: 15px;
+    max-width: 84vw;
+}
+
+.titulo-index h2{
+    font-size: 35px;
+}
+
+.titulo-index p{
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+#texto-principal{
+    margin-top: 40px;
+    font-size: 20px;
+    margin-left: 7vw;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+}
+
+/* Login e cadastro */
+
+.login{
+    background-image: linear-gradient(45deg, rgb(4, 4, 122), black);
+    color: white;
+}
+
+.login a{
+    color: white;
+}
+
+.login header,
+.login footer{
+    background: none;
+}
+
+.login footer{
+    border-top: solid 1px;
+}
+
+.formulario-login,
+.formulario-cadastro{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: white;
+    width: 250px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.formulario-login input, 
+.formulario-cadastro input{
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.formulario-login button, 
+.formulario-cadastro button{
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    padding: 15px;
+    width: 90%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.formulario-login button:hover{
+    background-color: rgb(71, 159, 248);
+}
+
+.login .menu{
+    padding-left: 20px;
+}
+/* footer */
+
+footer{
+    color: white;
+    margin-top: auto;
+    background-color: var(--azul-selim);
+    padding: 30px 25%;
+}
+
+footer section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes-sociais{
+    margin-left: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.redes-sociais a img{
+    width: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.escola-footer{
+    display: flex;
+}
+
+.escola-footer h1{
+    font-size: 60px;
+    margin-top: auto;
+}
+
+.inicio-footer{
+    text-align: center;
+    max-width: 200px;
+}

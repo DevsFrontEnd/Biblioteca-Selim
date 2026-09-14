@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Biblioteca Selim</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="login">
+    <header>
+        <section class="header-pt1">
+            <div class="escola">
+                <img src="imgs/iconeselim.png" alt="Logo da escola">
+                <h1 class="aling">E.E Selim José de Salles</h1>
+            </div>
+            <div class="titulo-header">
+                <h2>Feira Tecnica</h2>
+                <div class="abrir">
+                    <a href="#" class="botao-abrir-menu" onclick="abrirmenu()">☰</a>
+                </div>
+                <nav class="menu">
+                    <a href="#" class="botao-fechar-menu" onclick="fecharmenu()">✕</a>
+                    <a href="index.html">Início</a>
+                    <a href="catalogo.html">Catalogo</a>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <form class="formulario-cadastro">
+                <h1>Cadastro</h1>
+                <br><br>
+                <input type="text" name="campo-nome-cadastro" id="cadastro-nome" class="campos" placeholder="Nome">
+                <br><br>
+                <input type="number" name="campo-matricula-cadastro" id="cadastro-matricula" class="campos" placeholder="Matrícula">
+                <br><br>
+                <input type="password" name="campo-senha-cadastro" id="cadastro-senha" class="campos" placeholder="Senha">
+                <br><br>
+                <button>Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <article class="inicio-footer">
+                <div class="escola-footer">
+                    <img src="imgs/iconeselim.png" alt="Logo da escola">
+                    <h1>SJS</h1>
+                </div>
+                <p>E.E Selim José de Salles</p>
+            </article>
+            <article class="redes-sociais">
+                <p>Redes Sociais:</p>
+                <a href="#"><img src="imgs/logofacebook.png" alt="logo facebook"></a>
+                <a href="https://www.instagram.com/eeselimjosedesalles?stkn=cmJ1bHMyZ3A2M2c1"><img src="imgs/logoinstagram.png" alt="logo instagram"></a>
+                <a href="#"><img src="imgs/logoemail.png" alt="logo email"></a>
+            </article>
+        </section>
+    </footer>
+</body>
+</html>
