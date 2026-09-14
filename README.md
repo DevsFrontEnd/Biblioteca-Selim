@@ -1,4 +1,4 @@
-# 📖 Biblioteca Escolar
+# 📖 Biblioteca Selim
 
 Neste repositório nosso grupo escolar Devs Front-End iremos desenvolver nosso projeto de feira Técnica, um sistema para a biblioteca da escola colocando nossos conhecimentos a prova.
 
