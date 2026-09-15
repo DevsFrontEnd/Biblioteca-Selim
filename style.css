@@ -229,7 +229,8 @@ header{
 
 /* catalogo */
 
-.catalogo{
+.catalogo,
+.emprestimos{
     background-color: rgb(243, 240, 240);
     display: block;
     padding: 30px;
@@ -237,7 +238,8 @@ header{
     border-radius: 15px;
 }
 
-.box-livros{
+.box-livros,
+.livros{
     background-color: white;
     display: flex;
     flex-wrap: wrap;
@@ -258,7 +260,8 @@ header{
     margin-bottom: 15px;
 }
 
-.card-livro{
+.card-livro,
+.livro{
     border: solid 1px;
     border-radius: 10px;
     padding: 20px;
@@ -268,7 +271,8 @@ header{
     background-color: whitesmoke;
 }
 
-.card-livro img{
+.card-livro img,
+.livro img{
     width: 200px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -281,13 +285,25 @@ header{
     margin-bottom: 10px;
 }
 
-.card-livro button{
+.livro h3,
+.livro p{
+    margin-bottom: 10px;
+}
+
+.card-livro button,
+.livro button{
     border: none;
     background-color: var(--azul-selim);
     color: white;
     padding: 10px;
     cursor: pointer;
     border-radius: 10px;
+}
+
+.livro nav{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 
