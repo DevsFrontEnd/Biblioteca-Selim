@@ -227,7 +227,7 @@ header{
     padding-left: 20px;
 }
 
-/* catalogo */
+/* catalogo e emprestimo */
 
 .catalogo,
 .emprestimos{
@@ -247,6 +247,16 @@ header{
     padding: 30px;
     border-radius: 15px;
     gap: 40px;
+}
+
+.livros{
+    display: block;
+}
+
+.livros div{
+    min-width: 33%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .categorias-catalogo a{
@@ -271,8 +281,20 @@ header{
     background-color: whitesmoke;
 }
 
-.card-livro img,
+.livro{
+    max-width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
 .livro img{
+    width: 50px;
+    border-radius: 5px;
+}
+
+.card-livro img{
     width: 200px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -299,13 +321,6 @@ header{
     cursor: pointer;
     border-radius: 10px;
 }
-
-.livro nav{
-    display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
 
 /* infoLivro */
 .info-livro{
