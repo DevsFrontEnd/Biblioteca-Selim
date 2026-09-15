@@ -156,15 +156,16 @@ header{
 #texto-principal{
     margin-top: 40px;
     font-size: 20px;
-    margin-left: 7vw;
+    margin-left: 9vw;
     font-family: sans-serif;
     margin-bottom: 40px;
+    max-width: 70vw;
 }
 
 /* Login e cadastro */
 
 .login{
-    background-image: linear-gradient(45deg, rgb(4, 4, 122), black);
+    background-image: linear-gradient(45deg, var(--azul-selim), black);
     color: white;
 }
 
@@ -243,6 +244,7 @@ header{
     gap: 15px;
     padding: 30px;
     border-radius: 15px;
+    gap: 40px;
 }
 
 .categorias-catalogo a{
@@ -260,6 +262,88 @@ header{
     border: solid 1px;
     border-radius: 10px;
     padding: 20px;
+    max-width: 220px;
+    padding: 20px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.card-livro img{
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card-livro h3,
+.card-livro p,
+.card-livro div{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.card-livro button{
+    border: none;
+    background-color: var(--azul-selim);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+/* infoLivro */
+.info-livro{
+    background-color: white;
+    margin: 40px;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    max-width: 60vw;
+    margin: auto;
+}
+
+.info-livro img{
+    width: 300px;
+}
+
+.info-livro article{
+    display: block;
+    margin-left: 40px;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.info-livro article h3{
+    font-size: 40px;
+}
+
+.info-livro article h4{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.info-livro article p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info-livro button{
+    color: white;
+    background-color: var(--azul-selim);
+    padding: 15px;
+    width: 200px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.info-livro button:hover{
+    transform:translateY(-5px);
 }
 
 /* footer */
