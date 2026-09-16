@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo - Biblioteca Selim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <section class="header">
+            <div class="escola">
+                <img src="imgs/iconeselim.png" alt="Logo da escola">
+                <h1 class="aling">E.E Selim José de Salles</h1>
+            </div>
+            <div class="titulo-header">
+                <div class="abrir">
+                    <a href="#" class="botao-abrir-menu" onclick="abrirmenu()">☰</a>
+                </div>
+                    <h2>Feira Tecnica</h2>
+                <nav class="menu">
+                    <a href="#" class="botao-fechar-menu" onclick="fecharmenu()">✕</a>
+                    <a href="index.html">Início</a>
+                    <a href="catalogo.html">Catalogo</a>
+                    <a href="empetimos.html">Emprestimos</a>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="catalogo">
+            <div class="categorias-catalogo">
+                <button onclick="filtroLivros('all')">
+                    Todos
+                </button>
+                <button onclick="filtroLivros('roman')">
+                    Romance
+                </button>
+                <button onclick="filtroLivros('infor')">
+                    Informática e Tecnologia
+                </button>
+                <button onclick="filtroLivros('fant')">
+                    Fantasia
+                </button>
+                <button onclick="filtroLivros('ficc')">
+                    Ficção
+                </button>
+                <button onclick="filtroLivros('bio')">
+                    Biografia e Autobiografia
+                </button>
+            </div>
+            <h2>Catalogo de Livros</h2>
+            <section class="box-livros">
+                <article class="card-livro" data-type="Livro1" data-typefiltro="bio">
+                    <img src="imgs/catalogo/capadepoisdaquelaviagem.jpeg" alt="Livro1">
+                    <h3>Depois Daquela Viagem</h3>
+                    <p>Biografia</p>
+                    <div><a href="infolivro.html?item=Livro1"><button class="carrinho">Saiba Mais</button></a></div>
+                </article>
+                <article class="card-livro" data-type="Livro2" data-typefiltro="bio">
+                    <img src="imgs/catalogo/capamalala.jpeg" alt="Livro2">
+                    <h3>Eu sou Malala</h3>
+                    <p>Biografia, Autobiografia</p>
+                    <div><a href="infolivro.html?item=Livro2"><button class="carrinho">Saiba Mais</button></a></div>
+                </article>
+                <article class="card-livro" data-type="Livro3" data-typefiltro="roman">
+                    <img src="imgs/catalogo/capamemoriasposturasdebrascubas.jpeg" alt="Livro3">
+                    <h3>Memórias Póstumas de Brás Cubas</h3>
+                    <p>Romance</p>
+                    <div><a href="infolivro.html?item=Livro3"><button class="carrinho">Saiba Mais</button></a></div>
+                </article>
+                <article class="card-livro" data-type="Livro4" data-typefiltro="ficc">
+                    <img src="imgs/catalogo/capaluciola.jpeg" alt="Livro4">
+                    <h3>Lucíola</h3>
+                    <p>Ficção</p>
+                    <div><a href="infolivro.html?item=Livro4"><button class="carrinho">Saiba Mais</button></a></div>
+                </article>
+                <article class="card-livro" data-type="Livro5" data-typefiltro="ficc">
+                    <img src="imgs/catalogo/capairacema.jpeg" alt="Livro5">
+                    <h3>Iracema</h3>
+                    <p>Ficção</p>
+                    <div><a href="infolivro.html?item=Livro5"><button class="carrinho">Saiba Mais</button></a></div>
+                </article>
+                <article class="card-livro" data-type="Livro6" data-typefiltro="infor">
+                    <img src="imgs/catalogo/capalinuxbiblia.jpeg" alt="Livro6">
+                    <h3>Bíblia Linux</h3>
+                    <p>Informática e Tecnologia</p>
+                    <div><a href="infolivro.html?item=Livro6"><button class="carrinho">Saiba Mais</button></a></div>
+                </article>
+                <article class="card-livro" data-type="Livro7" data-typefiltro="infor">
+                    <img src="imgs/catalogo/capaentendendoalgoritmos.jpeg" alt="Livro7">
+                    <h3>Entendendo Algoritmos</h3>
+                    <p>Informática e Tecnologia</p>
+                    <div><a href="infolivro.html?item=Livro7"><button class="carrinho">Saiba Mais</button></a></div>
+                </article>
+                <article class="card-livro" data-type="Livro8" data-typefiltro="infor">
+                    <img src="imgs/catalogo/capajavaparaleigos.jpeg" alt="Livro8">
+                    <h3>Java para Leigos</h3>
+                    <p>Informática e Tecnologia</p>
+                    <div><a href="infolivro.html?item=Livro8"><button class="carrinho">Saiba Mais</button></a></div>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <article class="inicio-footer">
+                <div class="escola-footer">
+                    <img src="imgs/iconeselim.png" alt="Logo da escola">
+                    <h1>SJS</h1>
+                </div>
+                <p>E.E Selim José de Salles</p>
+            </article>
+            <article class="redes-sociais">
+                <p>Redes Sociais:</p>
+                <a href="#"><img src="imgs/logofacebook.png" alt="logo facebook"></a>
+                <a href="https://www.instagram.com/eeselimjosedesalles?stkn=cmJ1bHMyZ3A2M2c1"><img src="imgs/logoinstagram.png" alt="logo instagram"></a>
+                <a href="#"><img src="imgs/logoemail.png" alt="logo email"></a>
+            </article>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
