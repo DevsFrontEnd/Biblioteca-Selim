@@ -247,6 +247,7 @@ header{
     padding: 30px;
     border-radius: 15px;
     gap: 40px;
+    justify-content: center;
 }
 
 .livros{
@@ -314,6 +315,24 @@ header{
 
 .card-livro button,
 .livro button{
+    border: none;
+    background-color: var(--azul-selim);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.atrasado{
+    border: solid 2px rgba(255, 0, 0, 0.767);
+    color: red;
+}
+
+.atrasado button{
+    background-color: red;
+}
+
+.categorias-catalogo button{
     border: none;
     background-color: var(--azul-selim);
     color: white;

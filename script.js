@@ -7,7 +7,8 @@ function abrirmenu(){
 function fecharmenu(){
     const menu = document.querySelector(".menu");
     menu.style.display = "none";
-}
+} 
+
 /* Parte do Catalogo/Infolivro */
 const livros = {
     Livro1: {
