@@ -1,6 +1,6 @@
 :root{
-    --azul-selim: #12344d;
-    --branco-selim: #FAF9F6;
+    --azul-selim: #1E293B;
+    --branco-selim: #F1F5F9;
 }
 
 *{
@@ -12,7 +12,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: var(--branco-selim);
+    background-color: #F1F5F9;
 }
 
 a{
@@ -26,7 +26,7 @@ header{
     min-width: 95%;
     position: sticky;
     top: 0;
-    background-color: var(--branco-selim);
+    background-color: var(--azul-selim);
     padding-top: 20px;
 }
 
@@ -38,6 +38,7 @@ header{
     justify-content: space-between;
     border-top: solid 1px rgb(155, 154, 154);
     text-align: justify;
+    color: white;
 }
 
 .header-pt1 img,
@@ -49,7 +50,7 @@ header{
 }
 
 .links-header a{
-    background-color: rgb(4, 4, 172);
+    background-color: var(--azul-selim);;
     margin-left: 15px;
     padding: 10px;
     border-radius: 15px;
@@ -89,6 +90,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
+    color: white;
 }
 
 .header-pt2 a,
@@ -121,7 +123,7 @@ header{
 }
 
 .abrir a{
-    color: var(--azul-selim);
+    color: var(--branco-selim);
 }
 
 .menu a{
@@ -160,22 +162,24 @@ header{
     font-family: sans-serif;
     margin-bottom: 40px;
     max-width: 70vw;
+    color: #1E293B;
 }
 
 /* Login e cadastro */
 
 .login{
-    background-image: linear-gradient(45deg, var(--azul-selim), black);
-    color: white;
+    background-color: #F1F5F9;
+    color: whitesmoke;
 }
 
 .login a{
-    color: white;
+    color: whitesmoke;
 }
 
 .login header,
 .login footer{
     background: none;
+    background-color: var(--azul-selim);
 }
 
 .login footer{
@@ -185,8 +189,8 @@ header{
 .formulario-login,
 .formulario-cadastro{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(255, 255, 255, 0.7);
-    color: white;
+    background-color: whitesmoke;
+    color: #1E293B;
     width: 250px;
     height: auto;
     position: absolute;
@@ -196,6 +200,7 @@ header{
     border-radius: 15px;
     text-align: center;
     padding: 15px 0;
+    box-shadow: 4px 4px 12px #aaaa;
 }
 
 .formulario-login input, 
@@ -209,7 +214,7 @@ header{
 
 .formulario-login button, 
 .formulario-cadastro button{
-    background-color: dodgerblue;
+    background-color: #334155;
     border: none;
     color: white;
     padding: 15px;
@@ -273,7 +278,7 @@ header{
 
 .card-livro,
 .livro{
-    border: solid 1px;
+    box-shadow: 4px 4px 12px #aaaa;
     border-radius: 10px;
     padding: 20px;
     max-width: 220px;
@@ -321,6 +326,7 @@ header{
     padding: 10px;
     cursor: pointer;
     border-radius: 10px;
+    box-shadow: 4px 4px 12px #aaaa;
 }
 
 .atrasado{
@@ -334,11 +340,12 @@ header{
 
 .categorias-catalogo button{
     border: none;
-    background-color: var(--azul-selim);
+    background-color: #1E293B;
     color: white;
     padding: 10px;
     cursor: pointer;
     border-radius: 10px;
+    box-shadow: 4px 4px 12px #aaaa;
 }
 
 /* infoLivro */
