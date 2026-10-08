@@ -83,7 +83,7 @@ const livros = {
         paginas: "Páginas: 424",
         genero: "Gênero: Informática e Tecnologia"
     }
-};
+}; 
 
 const params = new URLSearchParams(window.location.search);
 const tipoLivro = params.get("item");

@@ -136,8 +136,7 @@ header{
 }
 
 .imagem-principal img{
-    margin-top: 30px;
-    width: 90vw;
+    width: 100vw;
 }
 
 .titulo-index{
@@ -255,10 +254,6 @@ header{
     justify-content: center;
 }
 
-.livros{
-    display: block;
-}
-
 .livros div{
     min-width: 33%;
     margin-top: auto;
@@ -289,14 +284,24 @@ header{
 
 .livro{
     max-width: 100%;
+    min-width: 35vw;
     display: flex;
-    gap: 10px;
+    gap: 15%;
     margin-bottom: 20px;
-    justify-content: space-between;
 }
 
+.livro article{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.livro article div{
+    margin-top: 20%;
+}
+
+
 .livro img{
-    width: 50px;
+    width: 250px;
     border-radius: 5px;
 }
 
@@ -316,6 +321,7 @@ header{
 .livro h3,
 .livro p{
     margin-bottom: 10px;
+    font-size: 25px;
 }
 
 .card-livro button,
@@ -327,6 +333,11 @@ header{
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 4px 4px 12px #aaaa;
+}
+
+.livro button{
+    padding: 15px;
+    font-size: 15px;
 }
 
 .atrasado{
@@ -351,12 +362,12 @@ header{
 /* infoLivro */
 .info-livro{
     background-color: white;
-    margin: 40px;
     border-radius: 15px;
     padding: 30px;
     display: flex;
     max-width: 60vw;
     margin: auto;
+    margin-top: 50px;
 }
 
 .info-livro img{
@@ -414,11 +425,10 @@ footer{
 
 footer section{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .redes-sociais{
-    margin-left: 100px;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -441,4 +451,16 @@ footer section{
 .inicio-footer{
     text-align: center;
     max-width: 200px;
+}
+
+.feira{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 50px;
+}
+
+.sobre-nos{
+    font-size: 45px;
+    margin-top: 20px;
+    text-align: center;
 }
