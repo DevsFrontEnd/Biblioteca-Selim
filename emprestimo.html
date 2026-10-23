@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empréstimos - Biblioteca Selim</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body class="emprestimo">
+  <header>
+    <article class="header-pt1">
+      <img src="imgs/Sjs.PNG" alt="Logo da Escola">
+
+      <nav>
+        <a href="index.html">
+          <i class="fa-sharp fa-solid fa-house"></i>
+          Página Inicial
+        </a>
+        <a href="catalogo.html">
+          <i class="fa-sharp fa-solid fa-book-open"></i>
+          Catálogo
+        </a>
+        <a href="emprestimo.html">
+          <i class="fa-solid fa-lines-leaning"></i>
+          Empréstimos
+        </a>
+        <a href="sobrenos.html">
+          <i class="fa-solid fa-building-columns"></i>
+          Sobre Nós
+        </a>
+      </nav>
+    </article>
+
+    <article class="header-pt2">
+      <input type="search" placeholder="O que você procura?    🔍">
+      <button><i class="fa-solid fa-user"></i></button>
+      <a href="login.html" id="botao-login-header">Login</a>
+    </article>
+  </header>
+
+  <main>
+    <section class="secao-emprestimos">
+        <article class="pt-cima-emprestimos">
+            <h1><i class="fa-sharp fa-solid fa-book-open"></i> Empréstimos</h1>
+            <p>Aqui estão os livros que você está emprestado. Acompanhe seus prazos e renove quando precisar.</p>
+            <div></div>
+        </article>
+
+            <section class="bloco-cards-emprestimos">
+                <article class="card-emprestimo atrasado">
+                    <img src="imgs/infolivro/capadepoisdaquelaviagem.jpeg" alt="Capa livro">
+                    <div class="linha-vertical"></div>
+                    <div class="card-emprestimo-info">
+                        <div>
+                            <h2>Depois Daquela Viagem</h2>
+                            <p>Valéria Polizzi</p>
+                        </div>
+                        <div>
+                            <p> <i class="fa-solid fa-calendar"></i>  Prazo de Devulução</p>
+                            <p><strong>ATRASADO</strong></p>
+                        </div>
+                        <div>
+                            <p> <i class="fa-brands fa-leanpub"></i>  Gênero:</p>
+                            <p><strong>Autobiografia</strong></p>
+                        </div>
+                        <div>
+                            <button class="botao-renovar"> <i class="fa-solid fa-rotate"></i>  renovar</button>
+                            <button class="botao-devolver"> <i class="fa-solid fa-box-open"></i>  Devolver</button>
+                        </div>    
+                    </div>            
+                </article>
+
+                <article class="card-emprestimo">
+                    <img src="imgs/infolivro/capamalala.jpeg" alt="Capa livro">
+                    <div class="linha-vertical"></div>
+                    <div class="card-emprestimo-info">
+                        <div>
+                            <h2>Eu sou Malala</h2>
+                            <p>Malala</p>
+                        </div>
+                        <div>
+                            <p> <i class="fa-solid fa-calendar"></i>  Prazo de Devulução</p>
+                            <p><strong>05/10/2026</strong></p>
+                        </div>
+                        <div>
+                            <p> <i class="fa-brands fa-leanpub"></i>  Gênero:</p>
+                            <p><strong>Biografia</strong></p>
+                        </div>
+                        <div>
+                            <button class="botao-renovar"> <i class="fa-solid fa-rotate"></i>  renovar</button>
+                            <button class="botao-devolver"> <i class="fa-solid fa-box-open"></i>  Devolver</button>
+                        </div>    
+                    </div>        
+                </article>
+
+                <article class="card-emprestimo">
+                    <img src="imgs/infolivro/capamemoriasposturasdebrascubas.jpeg" alt="Capa livro">
+                    <div class="linha-vertical"></div>
+                    <div class="card-emprestimo-info">
+                        <div>
+                            <h2>Memória postumas de Brás Cubas</h2>
+                            <p>Machado de Assis</p>
+                        </div>
+                        <div>
+                            <p> <i class="fa-solid fa-calendar"></i>  Prazo de Devulução</p>
+                            <p><strong>05/10/2026</strong></p>
+                        </div>
+                        <div>
+                            <p> <i class="fa-brands fa-leanpub"></i>  Gênero:</p>
+                            <p><strong>Romance</strong></p>
+                        </div>
+                        <div>
+                            <button class="botao-renovar"> <i class="fa-solid fa-rotate"></i> renovar</button>
+                            <button class="botao-devolver"> <i class="fa-solid fa-box-open"></i> Devolver</button>
+                        </div>    
+                    </div>               
+                </article>
+            </section>
+    </section>
+  </main>
+
+  <footer>
+    <section class="footer">
+      <p>SJS - E.E Selim José de Salles | Biblioteca Escolar</p>
+      <article>
+        <p>Redes Sociais:</p>
+        <nav>
+          <a href="#"><i class="fa-regular fa-envelope"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </nav>
+      </article>
+      <p>
+        <i class="fa-sharp fa-solid fa-book-open"></i>
+        Mais que livros é <strong style="border-bottom: solid 2px var(--amarelo-selim);">conhecimento</strong>.
+      </p>
+    </section>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

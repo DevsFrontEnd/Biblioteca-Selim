@@ -1,63 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - Biblioteca Selim</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-</head> 
-<body class="login">
-    <header>
-        <section class="header">
-            <article class="inicio-footer">
-                <div class="escola-footer">
-                    <img src="imgs/iconeselim.png" alt="Logo da escola">
-                    <h1>SJS</h1>
-                </div>
-                <p>E.E Selim José de Salles</p>
-            </article>
-            <div class="titulo-header">
-                <h2>Feira Tecnica</h2>
-                <div class="abrir">
-                    <a href="#" class="botao-abrir-menu" onclick="abrirmenu()">☰</a>
-                </div>
-                <nav class="menu">
-                    <a href="#" class="botao-fechar-menu" onclick="fecharmenu()">✕</a>
-                    <a href="index.html">Início</a>
-                    <a href="catalogo.html">Catalogo</a>
-                    <a href="empetimos.html">Emprestimos</a>
-                    <a href="sobrenos.html">Sobre Nós</a>
-                </nav>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Biblioteca Selim</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body class="cadastro">
+  <header>
+    <article class="header-pt1">
+      <img src="imgs/Sjs.PNG" alt="Logo da Escola">
+
+      <nav>
+        <a href="index.html">
+          <i class="fa-sharp fa-solid fa-house"></i>
+          Página Inicial
+        </a>
+        <a href="catalogo.html">
+          <i class="fa-sharp fa-solid fa-book-open"></i>
+          Catálogo
+        </a>
+        <a href="emprestimo.html">
+          <i class="fa-solid fa-lines-leaning"></i>
+          Empréstimos
+        </a>
+        <a href="sobrenos.html">
+            <i class="fa-solid fa-building-columns"></i>
+            Sobre Nós
+        </a>
+      </nav>
+    </article>
+
+    <article class="header-pt2">
+      <input type="search" placeholder="O que você procura?    🔍">
+      <button><i class="fa-solid fa-user"></i></button>
+      <a href="login.html" id="botao-login-header">Login</a>
+    </article>
+  </header>
+
+  <main>
+    <section class="bloco">
+        <div class="bloco-pt1">
+            <img src="imgs/cadastro e login/livro.jpg" alt="livro">
+            <h1>Cadastro</h1>
+            <p>Preencha os campos abaixo para criar sua conta e começar a usar a biblioteca.</p>
+        </div>
+        <form class="form">
+            <div class="campo">
+                <i class="fa-jelly-fill fa-regular fa-user"></i>
+                <input type="text" name="campo-nome" id="campo-nome" placeholder="Nome">
             </div>
-        </section>
-    </header>
+            <div class="campo">
+                <i class="fa-regular fa-address-card"></i>
+                <input type="text" name="campo-matricula" id="campo-nome" placeholder="Matrícula">
+            </div>
+            <div class="campo">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="campo-senha" id="campo-nome" placeholder="Senha">
+            </div>
+            <div class="campo botao-enviar">
+                <input type="submit" name="campo-enviar" id="campo-nome">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </form>
+        <div class="bloco-pt3">
+            <p>Já possui uma conta? </p>
+            <a href="login.html">Fazer Login.</a>
+        </div>
+    </section>
+  </main>
 
-    <main>
-        <section>
-            <form class="formulario-cadastro">
-                <h1>Cadastro</h1>
-                <br><br>
-                <input type="text" name="campo-nome-cadastro" id="cadastro-nome" class="campos" placeholder="Nome">
-                <br><br>
-                <input type="number" name="campo-matricula-cadastro" id="cadastro-matricula" class="campos" placeholder="Matrícula">
-                <br><br>
-                <input type="password" name="campo-senha-cadastro" id="cadastro-senha" class="campos" placeholder="Senha">
-                <br><br>
-                <button>Enviar</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <section>
-            <article class="redes-sociais">
-                <p>Redes Sociais:</p>
-                <a href="#"><img src="imgs/logofacebook.png" alt="logo facebook"></a>
-                <a href="https://www.instagram.com/eeselimjosedesalles?stkn=cmJ1bHMyZ3A2M2c1"><img src="imgs/logoinstagram.png" alt="logo instagram"></a>
-                <a href="#"><img src="imgs/logoemail.png" alt="logo email"></a>
-            </article>
-        </section>
-    </footer>
+  <footer>
+    <section class="footer">
+      <p>SJS - E.E Selim José de Salles | Biblioteca Escolar</p>
+      <article>
+        <p>Redes Sociais:</p>
+        <nav>
+          <a href="#"><i class="fa-regular fa-envelope"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </nav>
+      </article>
+      <p>
+        <i class="fa-sharp fa-solid fa-book-open"></i>Mais que livros, é <strong>conhecimento</strong>.
+      </p>
+    </section>
+  </footer>
+  <script src="script.js"></script>
 </body>
+
 </html>

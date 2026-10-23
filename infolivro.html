@@ -1,62 +1,151 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo - Biblioteca Selim</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes - Biblioteca Selim</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-<body> 
-    <header>
-        <section class="header">
-            <article class="inicio-footer">
-                <div class="escola-footer">
-                    <img src="imgs/iconeselim.png" alt="Logo da escola">
-                    <h1>SJS</h1>
-                </div>
-                <p>E.E Selim José de Salles</p>
-            </article>
-            <div class="titulo-header">
-                <h2>Feira Tecnica</h2>
-                <div class="abrir">
-                    <a href="#" class="botao-abrir-menu" onclick="abrirmenu()">☰</a>
-                </div>
-                <nav class="menu">
-                    <a href="#" class="botao-fechar-menu" onclick="fecharmenu()">✕</a>
-                    <a href="index.html">Início</a>
-                    <a href="catalogo.html">Catalogo</a>
-                    <a href="empetimos.html">Emprestimos</a>
-                    <a href="sobrenos.html">Sobre Nós</a>
-                </nav>
-            </div>
-        </section>
-    </header>
 
-    <main>
-        <section class="info-livro">
-            <img alt="Capa do livro" id="capa">
-            <article>
-                <h3 id="nome"></h3>
-                <h4 id="autor"></h4>
-                <p id="isbn"></p>
-                <p id="editora"></p>
-                <p id="paginas"></p>
-                <p id="genero"></p>
-                <button>Emprestar</button>
-            </article>
-        </section>
-    </main>
+<body class="infolivro">
+  <header>
+    <article class="header-pt1">
+      <img src="imgs/Sjs.PNG" alt="Logo da Escola">
 
-    <footer>
-        <section>
-            <article class="redes-sociais">
-                <p>Redes Sociais:</p>
-                <a href="#"><img src="imgs/logofacebook.png" alt="logo facebook"></a>
-                <a href="https://www.instagram.com/eeselimjosedesalles?stkn=cmJ1bHMyZ3A2M2c1"><img src="imgs/logoinstagram.png" alt="logo instagram"></a>
-                <a href="#"><img src="imgs/logoemail.png" alt="logo email"></a>
+      <nav>
+        <a href="index.html">
+          <i class="fa-sharp fa-solid fa-house"></i>
+          Página Inicial
+        </a>
+        <a href="catalogo.html">
+          <i class="fa-sharp fa-solid fa-book-open"></i>
+          Catálogo
+        </a>
+        <a href="emprestimo.html">
+          <i class="fa-solid fa-lines-leaning"></i>
+          Empréstimos
+        </a>
+        <a href="sobrenos.html">
+          <i class="fa-solid fa-building-columns"></i>
+          Sobre Nós
+        </a>
+      </nav>
+    </article>
+
+    <article class="header-pt2">
+      <input type="search" placeholder="O que você procura?    🔍">
+      <button><i class="fa-solid fa-user"></i></button>
+      <a href="login.html" id="botao-login-header">Login</a>
+    </article>
+  </header>
+
+  <main>
+    <nav class="info-caminho-paginas">
+      <a href="index.html"> <i class="fa-solid fa-house-chimney"></i> <i class="fa-solid fa-angle-right"></i></a>
+      <a href="catalogo.html">catálogo <i class="fa-solid fa-angle-right"></i></a>
+      <a href="#"><strong>Detalhes do livro</strong></a>
+    </nav>
+
+        <section class="info">
+            <article class="info-pt1">
+                <img src="#" id="capa-livro-pt1" alt="capa livro">
+            </article>
+
+            <article class="info-pt2">
+              <div class="div-genero-pt2"><i class="fa-sharp fa-solid fa-book-open"></i> <p id="genero-pt2"></p></div>  
+              <div>
+                <h2 id="titulo-pt2"></h2>
+                <h3 id="autor-pt2"></h3>
+              </div>
+                <p id="descricao-pt2"></p>
+                <div class="info-pt2-2">
+                  <div> <i class="fa-solid fa-barcode"></i> ISBN <br> <p id="isbn-pt2"></p> </div>
+                  <div> <i class="fa-solid fa-building-columns"></i> Editora <br> <p id="editora-pt2"></p> </div>
+                  <div> <i class="fa-regular fa-file-lines"></i> Paginas <br> <p id="paginas-pt2"></p> </div>
+                  <div> <i class="fa-solid fa-tag"></i> Gênero <br> <p id="genero-pt2-2"></p> </div>
+                </div>
+                <button> <i class="fa-brands fa-leanpub"></i> Emprestar <i class="fa-solid fa-angle-right"></i></button>
+            </article>
+                
+            <article class="info-pt3">
+                <h3> <i class="fa-solid fa-cube"></i> Sobre o livro</h3>
+
+                <div class="info-pt3-2">
+                  <div class="bloquim-info-pt3-2">
+                    <p class="icone-bloquim"><i class="fa-brands fa-leanpub"></i></p>
+                    <div>
+                        <p>Titulo</p>
+                        <p id="titulo-pt3"></p>
+                    </div>
+                  </div>
+
+                  <div class="bloquim-info-pt3-2">
+                    <p class="icone-bloquim"><i class="fa-jelly-fill fa-regular fa-user"></i></p>
+                    <div>
+                        <p>Autor(a)</p>
+                        <p id="autor-pt3"></p>
+                    </div>
+                  </div>
+                  
+                  <div class="bloquim-info-pt3-2">
+                    <p class="icone-bloquim"><i class="fa-solid fa-building-columns"></i></p>
+                    <div>
+                        <p>Editora</p>
+                        <p id="editora-pt3"></p>
+                    </div>
+                  </div>
+                    
+                  <div class="bloquim-info-pt3-2">
+                    <p class="icone-bloquim"><i class="fa-solid fa-barcode"></i></p>
+                    <div>
+                        <p>ISBN</p>
+                        <p id="isbn-pt3"></p>
+                    </div>
+                  </div>
+
+                  <div class="bloquim-info-pt3-2">
+                    <p class="icone-bloquim"><i class="fa-regular fa-file-lines"></i></p>
+                    <div>
+                      <p>Páginas</p>
+                      <p id="paginas-pt3"></p>
+                    </div>
+                  </div>
+                  
+                  <div class="bloquim-info-pt3-2">
+                    <p class="icone-bloquim"><i class="fa-solid fa-tag"></i></p>
+                    <div>
+                        <p>Gênero</p>
+                        <p id="genero-pt3"></p>
+                    </div>
+                  </div>
+                </div>
             </article>
         </section>
-    </footer>
-    <script src="script.js"></script>
+  </main>
+
+  <footer>
+    <section class="footer">
+      <p>SJS - E.E Selim José de Salles | Biblioteca Escolar</p>
+      <article>
+        <p>Redes Sociais:</p>
+        <nav>
+          <a href="#"><i class="fa-regular fa-envelope"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </nav>
+      </article>
+      <p>
+        <i class="fa-sharp fa-solid fa-book-open"></i>
+        Mais que livros é <strong style="border-bottom: solid 2px var(--amarelo-selim);">conhecimento</strong>.
+      </p>
+    </section>
+  </footer>
+  <script src="script.js"></script>
 </body>
+
 </html>

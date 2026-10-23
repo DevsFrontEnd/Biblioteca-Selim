@@ -1,466 +1,943 @@
-:root{
-    --azul-selim: #1E293B;
-    --branco-selim: #F1F5F9;
-}
-
 *{
     margin: 0;
     padding: 0;
+}
+
+:root{
+    --azul-selim-escuro: #0d1e3a;
+    --amarelo-selim: #f6ba20;
 }
 
 body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #F1F5F9;
-}
-
-a{
-    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* header */
 
 header{
-    z-index: 900;
-    min-width: 95%;
-    position: sticky;
-    top: 0;
-    background-color: var(--azul-selim);
-    padding-top: 20px;
-}
-
-.header-pt1,
-.header{
     display: flex;
-    padding: 20px;
-    margin-top: 10px;
     justify-content: space-between;
-    border-top: solid 1px rgb(155, 154, 154);
-    text-align: justify;
-    color: white;
+    background-color: var(--azul-selim-escuro);
 }
 
-.header-pt1 img,
-.header img{
-    width: 60px;
-    padding-right: 10px;
-    border-right: solid 1px rgb(122, 122, 122);
-    margin-right: 10px;
+header img{
+    margin: 15px;
 }
 
-.links-header a{
-    background-color: var(--azul-selim);;
-    margin-left: 15px;
+header input{
+    background-color: #132849;
+    border: none;
     padding: 10px;
     border-radius: 15px;
     color: white;
-    top: 20px;
-    position: relative;
-    margin-top: auto;
-    margin-bottom: auto;
 }
 
-.escola{
-   display: flex;
-}
-
-.aling{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.menu{
-    background-color: var(--azul-selim);
-    width: 250px;
-    height: 100vh;
-    z-index: 1000;
-    display: none;
-    flex-direction: column;
-    top: 0;
-    left: 0;
-    position: fixed;
-    padding-top: 20px;
-    box-shadow: inset 0px 0px 10px black;
-    font-family: sans-serif;
-}
-
-.header-pt2,
-.header{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
+header button{
+    background-color: var(--azul-selim-escuro);
+    border: none;
     color: white;
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 20px;
 }
 
-.header-pt2 a,
-.header a{
+header nav{
+    margin-left: 20px;
+    display: flex;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    min-width: 150px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover{
+    background-color: #132849;
+    border-bottom: var(--amarelo-selim) solid 2px;
+}
+
+.header-pt1{
+    display: flex;
+}
+
+.header-pt2{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 30px;
+}
+
+#botao-login-header{
+    border: solid 1px white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: small;
+    transition: all 0.3s;
     color: white;
     text-decoration: none;
     margin-left: 20px;
-    font-size: 20px;
 }
 
-.botao-abrir-menu,
-.botao-fechar-menu{
-    width: 25px;
-    position: relative;
-    align-self: flex-end;
-    margin: 30px;
-    margin-top: 0;
+#botao-login-header:hover{
+    background-color: white;
+    color: var(--azul-selim-escuro);
 }
 
-.pesquisa-header{
-    background-color: rgb(228, 227, 227);
+.header-pt3{
+    background-image: url(imgs/background-header.png);
+    background-color: #1c2f4e;
+    background-position: right;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 30px 110px;
+}
+
+.header-pt3 h3{
+    border-bottom: solid 2px var(--amarelo-selim);
+    width: 175px;
+    margin-bottom: 10px;
+}
+
+.header-pt3 h1{
+    font-family: serif;
+    margin-bottom: 10px;
+}
+
+.header-pt3 .botao-explorar{
+    background-color: var(--amarelo-selim);
+    color: var(--azul-selim-escuro);
+    padding: 10px;
+    border-radius: 10px;
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin-right: 25px;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: none;
 }
 
-.titulo-header{
-    display: flex;
+.header-pt3 .botao-explorar:hover{
+    color: white;
 }
 
-.abrir a{
-    color: var(--branco-selim);
+.header-pt3 strong{
+    color: var(--amarelo-selim);
 }
 
-.menu a{
+.header-pt3 p{
     margin-bottom: 15px;
+}
+
+.header-pt3 .botao-conta{
+    border: solid 1px white;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: all 0.3s;
+}
+
+.header-pt3 .botao-conta:hover{
+    background-color: white;
+    color: var(--azul-selim-escuro);
 }
 
 /* index */
-.imagem-principal{
+
+.index-pt1,
+.index-pt2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.index-pt1{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    max-width: 72vw;
+    color: var(--azul-selim-escuro);
+}
+
+.index-pt2{
+    margin-left: 25px;
+}
+
+.card-index img{
+    width: 150px;
+    border-radius: 10px;
+}
+
+.card-index{
     text-align: center;
-}
-
-.imagem-principal img{
-    width: 100vw;
-}
-
-.titulo-index{
-    margin-left: 7vw;
-    margin-top: 15px;
-    max-width: 84vw;
-}
-
-.titulo-index h2{
-    font-size: 35px;
-}
-
-.titulo-index p{
-    font-size: 25px;
-    font-family: sans-serif;
-}
-
-#texto-principal{
-    margin-top: 40px;
-    font-size: 20px;
-    margin-left: 9vw;
-    font-family: sans-serif;
-    margin-bottom: 40px;
-    max-width: 70vw;
-    color: #1E293B;
-}
-
-/* Login e cadastro */
-
-.login{
-    background-color: #F1F5F9;
-    color: whitesmoke;
-}
-
-.login a{
-    color: whitesmoke;
-}
-
-.login header,
-.login footer{
-    background: none;
-    background-color: var(--azul-selim);
-}
-
-.login footer{
-    border-top: solid 1px;
-}
-
-.formulario-login,
-.formulario-cadastro{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: whitesmoke;
-    color: #1E293B;
-    width: 250px;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px #0003;
+    padding: 20px;
+    min-width: 180px;
+    max-width: 180px;
+    margin-bottom: 20px;
     border-radius: 15px;
-    text-align: center;
-    padding: 15px 0;
-    box-shadow: 4px 4px 12px #aaaa;
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
 }
 
-.formulario-login input, 
-.formulario-cadastro input{
-    padding: 15px;
-    border: none;
+.card-index a{
+    text-decoration: none;
+    color: #4d7ab9;
+    border: solid 1px #4d7ab9;
     border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    margin-top: auto;
     font-size: 15px;
-    outline: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-.formulario-login button, 
-.formulario-cadastro button{
-    background-color: #334155;
-    border: none;
+.card-index a:hover{
+    background-color: #4d7ab9;
     color: white;
-    padding: 15px;
-    width: 90%;
+}
+
+.card-index h3{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.autor{
+    color: gray;
+}
+
+.pt-inferior-card{
+    text-align: left;
+}
+
+.pt-inferior-card p{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.botao-ver-livros{
+    color: #4d7ab9;
+    text-decoration: none;
+}
+
+.index-pt1 h2{
+    font-family: serif;
+    font-size: 30px;
+}
+
+.index-pt1 p{
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+.Gen-Narrativa,
+.Gen-Biografia,
+.Gen-Romance,
+.Gen-Conto{
+    padding: 3px;
+    text-align: center;
+    width: 70px;
     border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
+    font-weight: bold;
 }
 
-.formulario-login button:hover{
-    background-color: rgb(71, 159, 248);
+.Gen-Narrativa{
+    background-color: #eff6f8;
+    color: #4d7ab9;
+    width: 125px;
 }
 
-.login .menu{
-    padding-left: 20px;
+.Gen-Biografia{
+    color: #7f72dd;
+    background-color: #a2a0cd;
 }
 
-/* catalogo e emprestimo */
+.Gen-Romance{
+    background-color: #f2dead;
+    color: #e0ab4f;
+}
+
+.Gen-Conto{
+    background-color: #d4a4dc;
+    color: #c071c5;
+}
+
+.quadro-index{
+    height: 380px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* catalogo */
 
 .catalogo,
-.emprestimos{
-    background-color: rgb(243, 240, 240);
-    display: block;
-    padding: 30px;
-    margin: 30px;
-    border-radius: 15px;
+.emprestimo,
+.infolivro,
+.sobrenos,
+.cadastro,
+.login{
+    background-color: aliceblue;
+    color: #132849;
 }
 
-.box-livros,
-.livros{
-    background-color: white;
+.principal-catalogo{
     display: flex;
-    flex-wrap: wrap;
+}
+
+.header-pt3-catalogo h3{
+    color: var(--amarelo-selim);
+    border: none;
+}
+
+.header-pt3-catalogo{
+    margin-bottom: 20px;
+}
+
+.bloco-categorias a{
+    display: flex;
+    justify-content: space-between;
+    width: 225px;
+    text-decoration: none;
+    color: #132849;
+    background-color: aliceblue;
+    margin-top: 3px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+}
+
+.bloco-categorias a:hover{
+    color: white;
+    background-color: var(--azul-selim-escuro);
+}
+
+.bloco-categorias a div{
+    display: flex;
     gap: 15px;
-    padding: 30px;
-    border-radius: 15px;
-    gap: 40px;
-    justify-content: center;
 }
 
-.livros div{
-    min-width: 33%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.categorias-catalogo a{
-    border: solid black 1px;
-    padding: 4px;
-    color: black;
-    border-radius: 12px;
-}
-
-.categorias-catalogo{
+.bloco-categorias h2{
+    color: #132849;
     margin-bottom: 15px;
 }
 
-.card-livro,
-.livro{
-    box-shadow: 4px 4px 12px #aaaa;
+.bloco-categorias{
+    box-shadow: 0 4px 8px #0003;
+    width: 15vw;
+    padding: 20px;
+    background-color: white;
     border-radius: 10px;
-    padding: 20px;
-    max-width: 220px;
-    padding: 20px;
-    text-align: center;
-    background-color: whitesmoke;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    max-height: 300px;
+    margin-right: 30px;
 }
 
-.livro{
-    max-width: 100%;
-    min-width: 35vw;
+.card-catalogo img{
+    width: 170px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.card-catalogo{
+    background-color: white;
+    box-shadow: 0 4px 8px #0003;
+    border-radius: 15px;
+    padding: 15px;
+    width: 13vw;
+    text-align: center;
+    color: #132849;
+    display: block;
+}
+
+.card-catalogo a{
+    text-decoration: none;
+}
+
+.card-catalogo a p{
+    color: white;
+    padding: 5px;
+    background-color: #183564;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+.card-catalogo a p:hover{
+    background-color: #285294;
+}
+
+.card-catalogo p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.card-catalogo h3{
+    margin-bottom: 10px;
+}
+
+.card-catalogo div{
+    text-align: left;
+}
+
+.div-todos-livros{
     display: flex;
-    gap: 15%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.cabecalho-livros-catalogo{
+    color: var(--azul-selim-escuro);
+    margin-bottom: 30px;
+}
+
+.cabecalho-livros-catalogo p{
+    margin-left: 20px;
+}
+
+.Ficcao,
+.Romance,
+.Tecnologia,
+.Biografia,
+.Fantasia{
+    padding: 3px;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+.Ficcao{
+    background-color: #94c0fd;
+    color: #132849;
+}
+
+.Romance{
+    background-color: #f5e5be;
+    color: #f6ba20;
+}
+
+.Tecnologia{
+    background-color: #8eb7f1;
+    color: #3b69b4;
+}
+
+.Biografia{
+    background-color: #b8b5f7;
+    color: #7f72dd;
+}
+
+.Fantasia{
+    background-color: #c9f5be;
+    color: #5fbb48;
+}
+
+/* infolivro */
+.info{
+    background-color: white;
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.info-pt1{
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.info-pt1 img{
+    width: 15vw;
+    box-shadow: 0 4px 8px #0003;
+    border-radius: 15px;
+}
+
+.info-pt2{
+    width: 50vw;
+    margin: 0 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info-pt2 button{
+    border: none;
+    background-color: var(--amarelo-selim);
+    color: #132849;
+    border-radius: 10px;
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 30%;
+    transition: color 0.3s;
+}
+
+.info-pt2 button:hover{
+    color: white;
+}
+
+.info-pt2-2{
+    display: flex;
+    gap: 20px;
+}
+
+.div-genero-pt2 i{
+    color: var(--amarelo-selim);
+}
+
+.div-genero-pt2 p{
+    color: #285294;
+    font-weight: bold;
+}
+
+.info-pt2-2 div{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    width: 22%;
+    margin-bottom: 30px;
+}
+
+.info-pt2-2 div p{
+    margin-left: 15px;
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+.div-genero-pt2{
+    display: flex;
+    gap: 10px;
+}
+
+.div-genero-pt2{
+    border-bottom: solid 2px var(--amarelo-selim);
+    width: 125px;
     margin-bottom: 20px;
 }
 
-.livro article{
+.bloquim-info-pt3-2{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.icone-bloquim{
     margin-top: auto;
     margin-bottom: auto;
-}
-
-.livro article div{
-    margin-top: 20%;
-}
-
-
-.livro img{
-    width: 250px;
-    border-radius: 5px;
-}
-
-.card-livro img{
-    width: 200px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.card-livro h3,
-.card-livro p,
-.card-livro div{
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.livro h3,
-.livro p{
-    margin-bottom: 10px;
-    font-size: 25px;
-}
-
-.card-livro button,
-.livro button{
-    border: none;
-    background-color: var(--azul-selim);
-    color: white;
+    margin-right: 10px;
     padding: 10px;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 4px 4px 12px #aaaa;
+    border-radius: 50%;
+    background-color: rgb(216, 234, 250);
+    color: rgb(36, 82, 119);
 }
 
-.livro button{
-    padding: 15px;
-    font-size: 15px;
-}
-
-.atrasado{
-    border: solid 2px rgba(255, 0, 0, 0.767);
-    color: red;
-}
-
-.atrasado button{
-    background-color: red;
-}
-
-.categorias-catalogo button{
-    border: none;
-    background-color: #1E293B;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 4px 4px 12px #aaaa;
-}
-
-/* infoLivro */
-.info-livro{
-    background-color: white;
+.info-pt3{
+    background-color: aliceblue;
     border-radius: 15px;
-    padding: 30px;
-    display: flex;
-    max-width: 60vw;
-    margin: auto;
-    margin-top: 50px;
-}
-
-.info-livro img{
-    width: 300px;
-}
-
-.info-livro article{
-    display: block;
-    margin-left: 40px;
-    background-color: whitesmoke;
     padding: 20px;
-    border-radius: 10px;
-    width: 100%;
-    font-family: sans-serif;
+    width: 15vw;
 }
 
-.info-livro article h3{
-    font-size: 40px;
-}
-
-.info-livro article h4{
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-
-.info-livro article p{
-    font-size: 20px;
+.info-pt2 h2{
     margin-bottom: 10px;
 }
 
-.info-livro button{
-    color: white;
-    background-color: var(--azul-selim);
+.info-pt2 h3,
+.info-pt2 p{
+    margin-bottom: 15px;
+}
+
+.info-pt2-2 p{
+    margin-bottom: 0;
+}
+
+.info-caminho-paginas a{
+    color: #132849;
+    text-decoration: none;
+}
+
+.info-caminho-paginas{
+    margin: 15px;
+    margin-left: 5vw;
+}
+
+/* emprestimo */
+.secao-emprestimos{
+    background-color: white;
     padding: 15px;
-    width: 200px;
-    margin-top: 20px;
-    border: none;
+    margin: 3vh auto;
+    margin-top: 30px;
+    max-width: 90vw;
     border-radius: 15px;
-    cursor: pointer;
-    transition: 0.5s;
 }
 
-.info-livro button:hover{
-    transform:translateY(-5px);
+.pt-cima-emprestimos i{
+    color: var(--amarelo-selim);
 }
 
-/* footer */
-
-footer{
-    color: white;
-    margin-top: auto;
-    background-color: var(--azul-selim);
-    padding: 30px 25%;
+.pt-cima-emprestimos div{
+    height: 3px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 50px;
+    background-color: var(--amarelo-selim);
+    margin-left: 4%;
 }
 
-footer section{
+.pt-cima-emprestimos p{
+    font-size: 15px;
+    margin-left: 4%;
+}
+
+.card-emprestimo{
+    width: 45%;
+    border-radius: 15px;
+    padding: 20px;
     display: flex;
+    box-shadow: 0 4px 8px #0003;
+}
+
+.atrasado,
+.atrasado .botao-devolver{
+    color: rgb(196, 7, 7);
+    background-color: rgb(248, 207, 207);
+    border: solid 2px rgb(196, 7, 7);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.atrasado .linha-vertical{
+    background-color: rgb(253, 191, 191);
+}
+
+.atrasado .botao-renovar{
+    color: rgb(248, 207, 207);
+    background-color: rgb(196, 7, 7);
+    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.atrasado .botao-renovar:hover,
+.atrasado .botao-devolver:hover{
+    background-color: rgb(143, 4, 4);
+    color: white;
+    border-color: rgb(143, 4, 4);
+}
+
+.card-emprestimo img{
+    border-radius: 10px;
+    width: 13vw;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px #0003;
+}
+
+.botao-renovar{
+    color: white;
+    background-color: #183564;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botao-devolver{
+    color: #183564;
+    background-color: white;
+    border: solid #183564 2px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botao-renovar:hover,
+.botao-devolver:hover{
+    background-color: #2757a5;
+    color: white;
+    border-color: #2757a5;
+}
+
+.card-emprestimo-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-emprestimo-info strong{
+    margin-left: 25px;
+}
+
+.linha-vertical{
+    width: 1px;
+    height: 40vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 15px;
+    background-color: aliceblue;
+}
+
+.bloco-cards-emprestimos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* sobre nos */
+.bloco-sobrenos{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 85vw;
+}
+
+.sobrenos-pt1{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    max-width: 17vw;
+    min-width: 17vw;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.sobrenos-pt1 img{
+    width: 125px;
+    margin: 0 auto;
+    border-radius: 7px;
+}
+
+.sobrenos-pt1 a{
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 25px;
+    color: #183564;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sobrenos-pt1 a:hover{
+    background-color: #132849;
+    color: white;
+}
+
+.sobrenos-pt1 h2{
+    color: #183564;
+}
+
+.sobrenos-pt2{
+    padding: 20px;
+}
+
+.sobrenos-pt2 h2{
+    margin-bottom: 15px;
+}
+
+.sobrenos-pt2 i{
+    color: var(--amarelo-selim);
+    margin-right: 10px;
+}
+
+.sobrenos-pt2 p{
+    color: #2757a5;
+    font-size: 20px;
+}
+
+.sobrenos-pt2 div{
+    display: flex;
+}
+
+.sobrenos-pt3 div{
+    background-color: rgb(204, 228, 250);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sobrenos-pt3{
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sobrenos-pt3 h3{
+    font-size: 20px;
+}
+
+#linha-horizontal{
+    background-color: var(--amarelo-selim);
+    width: 30px;
+    height: 4px;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* cadastro e login */
+.bloco{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    width: 21vw;
+    margin: 12vh auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px #0003;
+}
+
+.bloco-pt1{
+    text-align: center;
+}
+
+.bloco-pt1 p{
+    margin: 0 auto;
+}
+
+.bloco h1{
+    font-family: serif;
+}
+
+.bloco p{
+    max-width: 80%;
+}
+
+.bloco img{
+    width: 20%;
+}
+
+.campo input{
+    border: none;
+    margin-left: 15px;
+    font-size: 17px;
+    width: 100%;
+    background-color: white;
+    outline: none;
+}
+
+.campo{
+    background-color: white;
+    border: solid 1px gray;
+    width: 17vw;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 12px auto;
+    display: flex;
+}
+
+.botao-enviar{
+    background-color: #132849;
+    color: white;
     justify-content: center;
 }
 
-.redes-sociais{
-    margin-top: auto;
-    margin-bottom: auto;
+.botao-enviar input{
+    background-color: #132849;
+    color: white;
+    width: 60px;
+    margin-right: 15px;
+    cursor: pointer;
 }
 
-.redes-sociais a img{
-    width: 40px;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-.escola-footer{
+.bloco-pt3{
     display: flex;
+    color: #132849;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.escola-footer h1{
-    font-size: 60px;
+.bloco-pt3 a{
+    color: #132849;
+    margin-left: 5px;
+}
+
+/* footer */
+footer{
+    background-color: var(--azul-selim-escuro);
+    text-align: center;
+    color: white;
+    padding: 15px;
     margin-top: auto;
 }
 
-.inicio-footer{
-    text-align: center;
-    max-width: 200px;
+.footer{
+    justify-content: space-between;
+    display: flex;
+    padding: 3px;
 }
 
-.feira{
+.footer strong{
+    color: var(--amarelo-selim);
+}
+
+.footer a,
+.footer p{
+    color: white;
     margin-top: auto;
     margin-bottom: auto;
-    font-size: 50px;
+    font-size: 17px;
 }
 
-.sobre-nos{
-    font-size: 45px;
-    margin-top: 20px;
-    text-align: center;
+@media (min-width: 1601px) {
+    .index-pt2{
+        max-width: 80vw;
+        margin-left: 13vw;
+    }
+
+    .index-pt1{
+        margin-left: 7vw;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .card-catalogo{
+        max-width: 11vw;
+    }
+
+    .div-todos-livros{
+        max-width: 80vw;
+    }
+
+    .bloco-categorias{
+        max-width: 13vw;
+    }
+
+    .info-caminho-paginas{
+        margin-top: 5vw;
+        margin-bottom: 30px;
+    }
+
+    .info{
+        max-width: 80vw;
+    }
+
+    .bloco-sobrenos{
+        max-width: 80vw;
+    }
 }

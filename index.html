@@ -1,95 +1,152 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início - Biblioteca Selim</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
+
 <body>
-    <header> 
-        <section class="header-pt1">
-            <div class="escola">
-                <article class="inicio-footer">
-                <div class="escola-footer">
-                    <img src="imgs/iconeselim.png" alt="Logo da escola">
-                    <h1>SJS</h1>
-                </div>
-                <p>E.E Selim José de Salles</p>
-            </article>
-            </div>
-            <h1 class="feira">Feira Tecnica</h1>
-            <nav class="links-header">
-                <a href="cadastro.html" class="aling">Cadastrar-se</a>
-                <a href="login.html" class="aling">Fazer Login</a>
+    <header>
+        <article class="header-pt1">
+            <img src="imgs/Sjs.PNG" alt="Logo da Escola">
+
+            <nav>
+                <a href="index.html">
+                    <i class="fa-sharp fa-solid fa-house"></i>
+                    Página Inicial
+                </a>
+                <a href="catalogo.html">
+                    <i class="fa-sharp fa-solid fa-book-open"></i>
+                    Catálogo
+                </a>
+                <a href="emprestimo.html">
+                    <i class="fa-solid fa-lines-leaning"></i>
+                    Empréstimos
+                </a>
+                <a href="sobrenos.html">
+                    <i class="fa-solid fa-building-columns"></i>
+                    Sobre Nós
+                </a>
             </nav>
-        </section>
-        <section class="header-pt2">
-            <div class="titulo-header">
-                <div class="abrir">
-                    <a href="#" class="botao-abrir-menu" onclick="abrirmenu()">☰</a>
-                </div>
-                    <h2>Menu</h2>
-                <nav class="menu">
-                    <a href="#" class="botao-fechar-menu" onclick="fecharmenu()">✕</a>
-                    <a href="index.html">Início</a>
-                    <a href="catalogo.html">Catalogo</a>
-                    <a href="empetimos.html">Emprestimos</a>
-                    <a href="sobrenos.html">Sobre Nós</a>
-                </nav>
-            </div>
-            <div>
-                <input class="pesquisa-header" type="text" placeholder="O que você Procura?       🔍">
-            </div>
-        </section>
+        </article>
+
+        <article class="header-pt2">
+            <input type="search" placeholder="O que você procura?    🔍">
+            <button><i class="fa-solid fa-user"></i></button>
+            <a href="login.html" id="botao-login-header">Login</a>
+        </article>
     </header>
 
     <main>
-        <section>
-            <div class="imagem-principal">
-                <img src="imgs/index/ImagemPrincipal.jpg" alt="imagem principal">
+        <article class="header-pt3">
+            <h3>Biblioteca Escolar</h3>
+            <h1>
+                Mais que livros, <br>
+                é <strong>conhecimento</strong>.
+            </h1>
+            <p>
+                Encontre livros, acompanhe seus empréstimos <br>
+                e descubra novas leituras.
+            </p>
+            <a href="catalogo.html" class="botao-explorar">
+                <i class="fa-sharp fa-solid fa-book-open"></i>
+                Explorar Catálogo
+            </a>
+            <a href="cadastro.html" class="botao-conta">
+                <i class="fa-jelly-fill fa-regular fa-user"></i>
+                Criar Conta
+            </a>
+        </article>
+
+        <section class="index">
+            <div class="index-pt1">
+                <div>
+                    <h2>
+                        <i class="fa-solid fa-lines-leaning"></i>Conheça nossos livros
+                    </h2>
+                    <p>Destaques da nossa biblioteca</p>
+                </div>
+                <a href="catalogo.html" class="botao-ver-livros">Ver todos os livros <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="titulo-index">
-                <h2>Biblioteca Selim</h2>
-                <p>Seja Bem vindo a Biblioteca Selim aqui você encontrará os livros da nossa biblioteca, poderá fazer suas reservas e renovalas ou gerencias seus emprestimos e dividas.</p>
-                <br><br>
-                <h2>Encontre títulos como:</h2>
-            </div>
-            <section class="box-livros"> 
-                <article class="card-livro" data-type="Livro1" data-typefiltro="bio">
-                    <img src="imgs/catalogo/capadepoisdaquelaviagem.jpeg" alt="Livro1">
-                    <h3>Depois Daquela Viagem</h3>
+
+            <section class="index-pt2">
+                <article class="card-index">
+                    <div>
+                        <img src="imgs/index/capadepoisdaquelaviagem.jpeg" alt="Capa Livro">
+                    </div>
+                    <div class="pt-inferior-card">
+                        <h3>Depois daquela viagem</h3>
+                        <p class="autor">Valéria Plassa Polizzi</p>
+                        <p class="Gen-Narrativa">Narrativa pessoal</p>
+                        <p>🟢 Disponível</p>
+                    </div>
+                    <a href="infolivro.html" onclick="abrirlivro('livro1')">Main informações <i class="fa-solid fa-angle-right"></i></a>
                 </article>
-                <article class="card-livro" data-type="Livro2" data-typefiltro="bio">
-                    <img src="imgs/catalogo/capamalala.jpeg" alt="Livro2">
-                    <h3>Eu sou Malala</h3>
+
+                <article class="card-index">
+                    <div><img src="imgs/index/capamalala.jpeg" alt="Capa Livro"></div>
+                    <div class="pt-inferior-card">
+                        <h3>Eu sou malala</h3>
+                        <p class="autor">Malala Yousafzai</p>
+                        <p class="Gen-Biografia">Biografia</p>
+                        <p>🟢 Disponível</p>
+                    </div>
+                    <a href="infolivro.html" onclick="abrirlivro('livro7')">Main informações <i class="fa-solid fa-angle-right"></i></a>
                 </article>
-                <article class="card-livro" data-type="Livro3" data-typefiltro="roman">
-                    <img src="imgs/catalogo/capamemoriasposturasdebrascubas.jpeg" alt="Livro3">
-                    <h3>Memórias Póstumas de Brás Cubas</h3>
+
+                <article class="card-index">
+                    <div>
+                        <img src="imgs/index/capamemoriasposturasdebrascubas.jpeg" alt="Capa Livro">
+                    </div>
+                    <div class="pt-inferior-card">
+                        <h3>Memórias Póstumas de Brás Cubas</h3>
+                        <p class="autor">Machado de Assis</p>
+                        <p class="Gen-Romance">Romance</p>
+                        <p>🟢 Disponível</p>
+                    </div>
+                    <a href="infolivro.html" onclick="abrirlivro('livro8')">Main informações <i class="fa-solid fa-angle-right"></i></a>
                 </article>
-                <article class="card-livro" data-type="Livro4" data-typefiltro="ficc">
-                    <img src="imgs/catalogo/capaluciola.jpeg" alt="Livro4">
-                    <h3>Lucíola</h3>
+
+                <article class="card-index">
+                    <div>
+                        <img src="imgs/index/capaluciola.jpeg" alt="Capa Livro">
+                    </div>
+                    <div class="pt-inferior-card">
+                        <h3>Lucíola</h3>
+                        <p class="autor">José de Alencar</p>
+                        <p class="Gen-Romance">Romance</p>
+                        <p>🟢 Disponível</p>
+                    </div>
+                    <a href="infolivro.html" onclick="abrirlivro('livro6')">Main informações <i class="fa-solid fa-angle-right"></i></a>
                 </article>
-                <article class="card-livro" data-type="Livro5" data-typefiltro="ficc">
-                    <img src="imgs/catalogo/capairacema.jpeg" alt="Livro5">
-                    <h3>Iracema</h3>
+
+                <article class="card-index">
+                    <div>
+                        <img src="imgs/index/capairacema.jpeg" alt="Capa Livro">
+                    </div>
+                    <div class="pt-inferior-card">
+                        <h3>Iracema</h3>
+                        <p class="autor">Lygia Fagundes Telles</p>
+                        <p class="Gen-Conto">Conto</p>
+                        <p>🟢 Disponível</p>
+                    </div>
+                    <a href="infolivro.html" onclick="abrirlivro('livro3')">Main informações <i class="fa-solid fa-angle-right"></i></a>
                 </article>
+                <img src="imgs/index/quadroindex.png" class="quadro-index" alt="quadro de incentivo">
             </section>
         </section>
     </main>
 
     <footer>
-        <section>
-            <article class="redes-sociais">
-                <p>Redes Sociais:</p>
-                <a href="#"><img src="imgs/logofacebook.png" alt="logo facebook"></a>
-                <a href="https://www.instagram.com/eeselimjosedesalles?stkn=cmJ1bHMyZ3A2M2c1"><img src="imgs/logoinstagram.png" alt="logo instagram"></a>
-                <a href="#"><img src="imgs/logoemail.png" alt="logo email"></a>
-            </article>
-        </section>
+            <p><i class="fa-sharp fa-solid fa-book-open"></i>Ler é construir um futuro melhor.</p>
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
