@@ -44,12 +44,12 @@ header button{
     font-size: 20px;
 }
 
-header nav{
+header #nav-computador{
     margin-left: 20px;
     display: flex;
 }
 
-header nav a{
+header #nav-computador a{
     text-decoration: none;
     color: white;
     padding: 10px;
@@ -62,9 +62,14 @@ header nav a{
     transition: background-color 0.3s ease;
 }
 
-header nav a:hover{
+header #nav-computador a:hover{
     background-color: #132849;
     border-bottom: var(--amarelo-selim) solid 2px;
+}
+
+#nav-celular,
+.botao-abrir-menu{
+    display: none;
 }
 
 .header-pt1{
@@ -939,5 +944,243 @@ footer{
 
     .bloco-sobrenos{
         max-width: 80vw;
+    }
+}
+
+@media (max-width: 768px), (max-width: 480px) {
+    /* index, header e footer */
+    .header-pt1 #nav-computador{
+        display: none;
+    }
+
+    #nav-celular{
+        z-index: 1000;
+        height: 100vh;
+        width: 45vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: var(--azul-selim-escuro);
+        display: none;
+        flex-direction: column;
+        text-align: right;
+        padding: 40px;
+    }
+
+    #nav-celular a{
+        color: white;
+        text-decoration: none;
+        margin-bottom: 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    #nav-celular .botao-abrir-menu i{
+        margin-top: 15px;
+        top: 0;
+        right: 0;
+    }
+
+    .header-pt1 img{
+        height: 7vh;
+    }
+
+    .index-pt2{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-pt3{
+        background-image: none;
+        padding: 30px 5vw;
+    }
+
+    .header-pt3 p{
+        width: 80vw;
+    }
+
+    .header-pt2,
+    .index-pt1 a{
+        display: none;
+    }
+
+    .quadro-index{
+        width: 70vw;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .card-index{
+        min-width: 55vw;
+    }
+
+    .card-index p,
+    .card-index a{
+        font-size: 17px;
+    }
+
+    .card-index h3{
+        font-size: 22px;
+    }
+
+    .index-pt1{
+        margin: 20px auto;
+    }
+
+    .index-pt1 h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .botao-abrir-menu{
+        display: flex;
+        color: white;
+        text-decoration: none;
+        margin: auto 5vw;
+    }
+
+    .botao-fechar-menu{
+        text-align: left;
+    }
+
+    .Gen-Narrativa,
+    .Gen-Biografia,
+    .Gen-Romance,
+    .Gen-Conto{
+        width: 88px;
+    }
+
+    .Gen-Narrativa{
+        width: 150px;
+    }
+    
+    footer{
+        font-size: 17px;
+    }
+
+    .footer nav,
+    .footer p{
+        display: none;
+    }
+
+    #creditos{
+        display: flex;
+    }
+
+    /* catalogo */
+    .bloco-categorias nav a div p{
+        display: none;
+    }
+    
+    .bloco-categorias a{
+        width: 40px;
+        margin: 10px auto;
+    }
+
+    .bloco-categorias h2 i{
+        display: none;
+    }
+
+    .bloco-categorias h2{
+        font-size: 17px;
+    }
+
+    .div-todos-livros{
+        flex-direction: column;
+    }
+
+    .card-catalogo{
+        width: 50vw;
+    }
+
+    /* emprestimo */
+    .card-emprestimo{
+        min-width: 80vw;
+    }
+
+    .card-emprestimo img{
+        width: 40vw;
+        height: 70%;
+        margin: auto 0;
+    }
+
+    .botao-renovar{
+    color: white;
+        margin-bottom: 10px;
+    }
+
+    /* infolivro */
+    .info-pt1,
+    .info-pt2-2{
+        display: none;
+    }
+
+    .info-pt2{
+        margin-left: 5px;
+    }
+
+    .info-pt2 button{
+        width: 50vw;
+    }
+
+    .bloquim-info-pt3-2 i{
+        font-size: 15px;
+    }
+
+    .info-pt3{
+        width: 30vw;
+    }
+
+    .info-caminho-paginas{
+        margin-top: 5vh;
+        margin-bottom: 3vh;
+    }
+
+    /* sobre nos */
+    .sobrenos-pt3{
+        display: none;
+    }
+
+    .sobrenos-pt2{
+        padding: 5px;
+    }
+
+    .sobrenos-pt1 img{
+        display: none;
+    }
+
+    .sobrenos-pt1 a{
+        font-size: 0;
+        display: flex;
+        gap: 3px;
+        width: 30px;
+    }
+
+    .sobrenos-pt1 a i{
+        font-size: 15px;
+    }
+
+    .sobrenos-pt1{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        margin-left: -10%;
+    }
+
+    .sobrenos-pt1 h2{
+        display: none;
+    }
+
+    .bloco-sobrenos{
+        flex-direction: column;
+    }
+
+    /* cadastro e login */
+    .bloco{
+        width: 70vw;
+    }
+
+    .campo{
+        width: 80%;
     }
 }

@@ -16,6 +16,16 @@ function filtroLivros(typefiltro) {
         });
 }
 
+function abrirmenu(){
+    const menu = document.getElementById("nav-celular");
+    menu.style.display = "flex";
+}
+
+function fecharmenu(){
+    const menu = document.getElementById("nav-celular");
+    menu.style.display = "none";
+}
+
 /* função sobre nos */
 function sobre(parte) {
   localStorage.setItem('sobrenos-pt2', parte);
