@@ -1120,20 +1120,29 @@ footer{
     }
 
     .info-pt2 button{
-        width: 50vw;
+        width: 40vw;
     }
 
-    .bloquim-info-pt3-2 i{
-        font-size: 15px;
+    .icone-bloquim{
+        display: none;
     }
 
     .info-pt3{
-        width: 30vw;
+        width: 40vw;
     }
 
     .info-caminho-paginas{
         margin-top: 5vh;
         margin-bottom: 3vh;
+    }
+
+    .info-pt2 button{
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .info{
+        padding: 10px;
     }
 
     /* sobre nos */
