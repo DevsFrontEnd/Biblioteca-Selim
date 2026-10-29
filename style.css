@@ -1090,8 +1090,30 @@ footer{
     }
 
     .card-catalogo{
-        width: 50vw;
+        width: 55vw;
+        margin: 0 auto;
     }
+
+    .principal-catalogo{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bloco-categorias{
+        margin: 10px auto;
+        width: 60vw;
+    }
+
+    .bloco-categorias nav{
+        display: block;
+        gap: 10px; 
+    }
+
+    .quebra-linha{
+        display: flex;
+        gap: 10px; 
+    }
+
 
     /* emprestimo */
     .card-emprestimo{
