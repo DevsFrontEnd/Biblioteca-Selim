@@ -1,115 +1,160 @@
 <!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo - Biblioteca Selim</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo - Biblioteca Selim</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
-    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-</head>
+  <body class="catalogo">
+    <header>
+      <article class="header-pt1">
+        <img src="imgs/Sjs.PNG" alt="Logo da Escola" />
 
-<body class="catalogo">
-  <header>
-        <article class="header-pt1">
-            <img src="imgs/Sjs.PNG" alt="Logo da Escola">
+        <nav id="nav-computador">
+          <a href="index.html">
+            <i class="fa-sharp fa-solid fa-house"></i>
+            Página Inicial
+          </a>
+          <a href="catalogo.html">
+            <i class="fa-sharp fa-solid fa-book-open"></i>
+            Catálogo
+          </a>
+          <a href="emprestimo.html">
+            <i class="fa-solid fa-lines-leaning"></i>
+            Empréstimos
+          </a>
+          <a href="sobrenos.html">
+            <i class="fa-solid fa-building-columns"></i>
+            Sobre Nós
+          </a>
+        </nav>
+      </article>
 
-            <nav id="nav-computador">
-                <a href="index.html">
-                    <i class="fa-sharp fa-solid fa-house"></i>
-                    Página Inicial
-                </a>
-                <a href="catalogo.html">
-                    <i class="fa-sharp fa-solid fa-book-open"></i>
-                    Catálogo
-                </a>
-                <a href="emprestimo.html">
-                    <i class="fa-solid fa-lines-leaning"></i>
-                    Empréstimos
-                </a>
-                <a href="sobrenos.html">
-                    <i class="fa-solid fa-building-columns"></i>
-                    Sobre Nós
-                </a>
-            </nav>
-        </article>
+      <a href="#" onclick="abrirmenu()" class="botao-abrir-menu">
+        <i class="fa-solid fa-bars"></i>
+      </a>
 
-        <a href="#" onclick="abrirmenu()" class="botao-abrir-menu">
-            <i class="fa-solid fa-bars"></i>
+      <nav id="nav-celular">
+        <a href="#" onclick="fecharmenu()" class="botao-fechar-menu">
+          <i class="fa-solid fa-xmark"></i>
         </a>
 
-        <nav id="nav-celular">
-            <a href="#" onclick="fecharmenu()" class="botao-fechar-menu">
-                <i class="fa-solid fa-xmark"></i>
-            </a>
+        <a href="index.html">
+          <i class="fa-sharp fa-solid fa-house"></i>
+          Página Inicial
+        </a>
 
-            <a href="index.html">
-                <i class="fa-sharp fa-solid fa-house"></i>
-                Página Inicial
-            </a>
+        <a href="catalogo.html">
+          <i class="fa-sharp fa-solid fa-book-open"></i>
+          Catálogo
+        </a>
 
-            <a href="catalogo.html">
-                <i class="fa-sharp fa-solid fa-book-open"></i>
-                Catálogo
-            </a>
+        <a href="emprestimo.html">
+          <i class="fa-solid fa-lines-leaning"></i>
+          Empréstimos
+        </a>
 
-            <a href="emprestimo.html">
-                <i class="fa-solid fa-lines-leaning"></i>
-                Empréstimos
-            </a>
+        <a href="sobrenos.html">
+          <i class="fa-solid fa-building-columns"></i>
+          Sobre Nós
+        </a>
+      </nav>
 
-            <a href="sobrenos.html">
-                <i class="fa-solid fa-building-columns"></i>
-                Sobre Nós
-            </a>
-        </nav>
-
-        <article class="header-pt2">
-            <input type="search" placeholder="O que você procura?    🔍">
-            <button><i class="fa-solid fa-user"></i></button>
-            <a href="login.html" id="botao-login-header">Login</a>
-        </article>
+      <article class="header-pt2">
+        <input type="search" placeholder="O que você procura?    🔍" />
+        <button><i class="fa-solid fa-user"></i></button>
+        <a href="login.html" id="botao-login-header">Login</a>
+      </article>
     </header>
 
-  <main>
-    <article class="header-pt3-catalogo header-pt3">
-      <h3>Biblioteca Escolar</h3>
-      <h1>
-        Explore novos <br>
-        mundos através <br>
-        dos <strong>livros</strong>.
-      </h1>
-      <p>
-        Aqui você encontra ums grande variedade de livros <br>
-        para todos os gostos. Escolha, leia e faça parte dessa jornada!
-      </p>
-    </article>
+    <main>
+      <article class="header-pt3-catalogo header-pt3">
+        <h3>Biblioteca Escolar</h3>
+        <h1>
+          Explore novos <br />
+          mundos através <br />
+          dos <strong>livros</strong>.
+        </h1>
+        <p>
+          Aqui você encontra ums grande variedade de livros <br />
+          para todos os gostos. Escolha, leia e faça parte dessa jornada!
+        </p>
+      </article>
       <section class="principal-catalogo">
         <article class="bloco-categorias">
           <div>
-            <h2> <i class="fa-solid fa-lines-leaning"></i> Categorias</h2>
+            <h2><i class="fa-solid fa-lines-leaning"></i> Categorias</h2>
             <nav>
-              <a href="#" onclick="filtroLivros('all')"> <div><i class="fa-solid fa-table-cells-large"></i> <p>Todos os livros</p></div> <i class="fa-solid fa-angle-right"></i> </a>
-              <a href="#" onclick="filtroLivros('roman')"> <div><i class="fa-regular fa-heart"></i> <p>Romance</p></div> <i class="fa-solid fa-angle-right"></i> </a>
-              <a href="#" onclick="filtroLivros('infor')"> <div><i class="fa-solid fa-display"></i> <p>Informática e tecnoligia</p></div> <i class="fa-solid fa-angle-right"></i> </a>
-              <a href="#" onclick="filtroLivros('fant')"> <div><i class="fa-regular fa-star"></i> <p>Fantasia</p></div> <i class="fa-solid fa-angle-right"></i> </a>
-              <a href="#" onclick="filtroLivros('ficc')"> <div><i class="fa-brands fa-leanpub"></i> <p>Ficção</p></div> <i class="fa-solid fa-angle-right"></i> </a>
-              <a href="#" onclick="filtroLivros('bio')"> <div><i class="fa-jelly-fill fa-regular fa-user"></i> <p>Biografia e Autobiografia</p></div> <i class="fa-solid fa-angle-right"></i> </a>
+              <a href="#" onclick="filtroLivros('all')">
+                <div>
+                  <i class="fa-solid fa-table-cells-large"></i>
+                  <p>Todos os livros</p>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+              <a href="#" onclick="filtroLivros('roman')">
+                <div>
+                  <i class="fa-regular fa-heart"></i>
+                  <p>Romance</p>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+              <a href="#" onclick="filtroLivros('infor')">
+                <div>
+                  <i class="fa-solid fa-display"></i>
+                  <p>Informática e tecnoligia</p>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+              <a href="#" onclick="filtroLivros('fant')">
+                <div>
+                  <i class="fa-regular fa-star"></i>
+                  <p>Fantasia</p>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+              <a href="#" onclick="filtroLivros('ficc')">
+                <div>
+                  <i class="fa-brands fa-leanpub"></i>
+                  <p>Ficção</p>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+              <a href="#" onclick="filtroLivros('bio')">
+                <div>
+                  <i class="fa-jelly-fill fa-regular fa-user"></i>
+                  <p>Biografia e Autobiografia</p>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
             </nav>
           </div>
         </article>
 
         <section class="secao-livros">
           <article class="cabecalho-livros-catalogo">
-            <h2> <i class="fa-brands fa-leanpub"></i> Catálogo de Livros</h2>
-            <p>Encontre seu próximo livro favorito. Use os filtros para encontrar exatamente o que procura.</p>
+            <h2><i class="fa-brands fa-leanpub"></i> Catálogo de Livros</h2>
+            <p>
+              Encontre seu próximo livro favorito. Use os filtros para encontrar
+              exatamente o que procura.
+            </p>
           </article>
 
           <div class="div-todos-livros">
             <article class="card-catalogo" data-typefiltro="bio">
-              <img src="imgs/catalogo/capadepoisdaquelaviagem.jpeg" alt="capa livro">
+              <img
+                src="imgs/catalogo/capadepoisdaquelaviagem.jpeg"
+                alt="capa livro"
+              />
               <div>
                 <p class="Biografia">Autobiografia</p>
                 <h3>Depois Daquela Viagem</h3>
@@ -122,7 +167,10 @@
             </article>
 
             <article class="card-catalogo" data-typefiltro="infor">
-              <img src="imgs/catalogo/capaentendendoalgoritmos.jpeg" alt="capa livro">
+              <img
+                src="imgs/catalogo/capaentendendoalgoritmos.jpeg"
+                alt="capa livro"
+              />
               <div>
                 <p class="Tecnologia">Tecnologia</p>
                 <h3>Entendendo Algoritmos</h3>
@@ -135,7 +183,7 @@
             </article>
 
             <article class="card-catalogo" data-typefiltro="roman">
-              <img src="imgs/catalogo/capairacema.jpeg" alt="capa livro">
+              <img src="imgs/catalogo/capairacema.jpeg" alt="capa livro" />
               <div>
                 <p class="Romance">Romance</p>
                 <h3>Iracema</h3>
@@ -148,7 +196,10 @@
             </article>
 
             <article class="card-catalogo" data-typefiltro="infor">
-              <img src="imgs/catalogo/capajavaparaleigos.jpeg" alt="capa livro">
+              <img
+                src="imgs/catalogo/capajavaparaleigos.jpeg"
+                alt="capa livro"
+              />
               <div>
                 <p class="Tecnologia">Tecnologia</p>
                 <h3>Java para leigos</h3>
@@ -161,7 +212,7 @@
             </article>
 
             <article class="card-catalogo" data-typefiltro="infor">
-              <img src="imgs/catalogo/capalinuxbiblia.jpeg" alt="capa livro">
+              <img src="imgs/catalogo/capalinuxbiblia.jpeg" alt="capa livro" />
               <div>
                 <p class="Tecnologia">Tecnologia</p>
                 <h3>Linux a biblia</h3>
@@ -174,7 +225,7 @@
             </article>
 
             <article class="card-catalogo" data-typefiltro="ficc">
-              <img src="imgs/catalogo/capaluciola.jpeg" alt="capa livro">
+              <img src="imgs/catalogo/capaluciola.jpeg" alt="capa livro" />
               <div>
                 <p class="Ficcao">Ficção</p>
                 <h3>Luciola</h3>
@@ -187,7 +238,7 @@
             </article>
 
             <article class="card-catalogo" data-typefiltro="bio">
-              <img src="imgs/catalogo/capamalala.jpeg" alt="capa livro">
+              <img src="imgs/catalogo/capamalala.jpeg" alt="capa livro" />
               <div>
                 <p class="Biografia">Biografia</p>
                 <h3>Eu sou Malala</h3>
@@ -200,7 +251,10 @@
             </article>
 
             <article class="card-catalogo" data-typefiltro="roman">
-              <img src="imgs/catalogo/capamemoriasposturasdebrascubas.jpeg" alt="capa livro">
+              <img
+                src="imgs/catalogo/capamemoriasposturasdebrascubas.jpeg"
+                alt="capa livro"
+              />
               <div>
                 <p class="Romance">Romance</p>
                 <h3>Memória postumas de Brás Cubas</h3>
@@ -213,7 +267,7 @@
             </article>
 
             <article class="card-catalogo" data-typefiltro="roman">
-              <img src="imgs/catalogo/capadomcasmurro.jpeg" alt="capa livro">
+              <img src="imgs/catalogo/capadomcasmurro.jpeg" alt="capa livro" />
               <div>
                 <p class="Romance">Romance</p>
                 <h3>Dom Casmurro</h3>
@@ -226,7 +280,7 @@
             </article>
 
             <article class="card-catalogo" data-typefiltro="ficc">
-              <img src="imgs/catalogo/capaoalienista.jpeg" alt="capa livro">
+              <img src="imgs/catalogo/capaoalienista.jpeg" alt="capa livro" />
               <div>
                 <p class="Ficcao">Ficção</p>
                 <h3>O Alienista</h3>
@@ -239,7 +293,7 @@
             </article>
 
             <article class="card-catalogo" data-typefiltro="roman">
-              <img src="imgs/catalogo/capavidassecas.jpeg" alt="capa livro">
+              <img src="imgs/catalogo/capavidassecas.jpeg" alt="capa livro" />
               <div>
                 <p class="Romance">Romance</p>
                 <h3>Vidas Secas</h3>
@@ -252,7 +306,7 @@
             </article>
 
             <article class="card-catalogo" data-typefiltro="roman">
-              <img src="imgs/catalogo/capaocortico.jpeg" alt="capa livro">
+              <img src="imgs/catalogo/capaocortico.jpeg" alt="capa livro" />
               <div>
                 <p class="Romance">Romance</p>
                 <h3>O Cortiço</h3>
@@ -265,7 +319,7 @@
             </article>
 
             <article class="card-catalogo" data-typefiltro="roman">
-              <img src="imgs/catalogo/capajorgeamado.jpeg" alt="capa livro">
+              <img src="imgs/catalogo/capajorgeamado.jpeg" alt="capa livro" />
               <div>
                 <p class="Romance">Romance</p>
                 <h3>Capitães da Areia</h3>
@@ -278,7 +332,10 @@
             </article>
 
             <article class="card-catalogo" data-typefiltro="fant">
-              <img src="imgs/catalogo/capaopequenoprincipe.jpeg" alt="capa livro">
+              <img
+                src="imgs/catalogo/capaopequenoprincipe.jpeg"
+                alt="capa livro"
+              />
               <div>
                 <p class="Fantasia">Fantasia</p>
                 <h3>O Pequeno Príncipe</h3>
@@ -291,7 +348,7 @@
             </article>
 
             <article class="card-catalogo" data-typefiltro="bio">
-              <img src="imgs/catalogo/capaannyfranck.jpeg" alt="capa livro">
+              <img src="imgs/catalogo/capaannyfranck.jpeg" alt="capa livro" />
               <div>
                 <p class="Biografia">Autobiografia</p>
                 <h3>O Diário de Anne Frank</h3>
@@ -304,7 +361,7 @@
             </article>
 
             <article class="card-catalogo" data-typefiltro="fant">
-              <img src="imgs/catalogo/capaharrypoter.jpeg" alt="capa livro">
+              <img src="imgs/catalogo/capaharrypoter.jpeg" alt="capa livro" />
               <div>
                 <p class="Fantasia">Fantasia</p>
                 <h3>Harry Potter e a Pedra Filosofal</h3>
@@ -317,7 +374,10 @@
             </article>
 
             <article class="card-catalogo" data-typefiltro="bio">
-              <img src="imgs/catalogo/capaquartododesejo.jpeg" alt="capa livro">
+              <img
+                src="imgs/catalogo/capaquartododesejo.jpeg"
+                alt="capa livro"
+              />
               <div>
                 <p class="Biografia">Autobiográfia</p>
                 <h3>Quarto de Despejo</h3>
@@ -330,7 +390,10 @@
             </article>
 
             <article class="card-catalogo" data-typefiltro="roman">
-              <img src="imgs/catalogo/capaahoradaestrela.jpeg" alt="capa livro">
+              <img
+                src="imgs/catalogo/capaahoradaestrela.jpeg"
+                alt="capa livro"
+              />
               <div>
                 <p class="Romance">Romance</p>
                 <h3>A Hora da Estrela</h3>
@@ -341,30 +404,140 @@
                 <p>Mais informações <i class="fa-solid fa-angle-right"></i></p>
               </a>
             </article>
+            <article class="card-catalogo" data-typefiltro="roman">
+              <img
+                src="imgs/infolivro/capaosirmaoskaramazov.jpeg"
+                alt="Capa do livro Os Irmãos Karamazov"
+              />
+              <div>
+                <p class="Romance">Romance</p>
+                <h3>Os Irmãos Karamazov</h3>
+                <p>Fiódor Dostoiévski</p>
+                <p>🟢 Disponível</p>
+              </div>
+              <a href="infolivro.html" onclick="abrirlivro('livro19')">
+                <p>Mais informações <i class="fa-solid fa-angle-right"></i></p>
+              </a>
+            </article>
+
+            <article class="card-catalogo" data-typefiltro="ficc">
+              <img
+                src="imgs/infolivro/capamaquinadotempo.jpeg"
+                alt="Capa do livro A Máquina do Tempo"
+              />
+              <div>
+                <p class="Ficcao">Ficção</p>
+                <h3>A Máquina do Tempo</h3>
+                <p>H. G. Wells</p>
+                <p>🟢 Disponível</p>
+              </div>
+              <a href="infolivro.html" onclick="abrirlivro('livro20')">
+                <p>Mais informações <i class="fa-solid fa-angle-right"></i></p>
+              </a>
+            </article>
+
+            <article class="card-catalogo" data-typefiltro="ficc">
+              <img
+                src="imgs/infolivro/capaohomemmaisinteligentedomundo.jpeg"
+                alt="Capa do livro O Homem Mais Inteligente do Mundo"
+              />
+              <div>
+                <p class="Ficcao">Ficção</p>
+                <h3>O Homem Mais Inteligente do Mundo</h3>
+                <p>Augusto Cury</p>
+                <p>🟢 Disponível</p>
+              </div>
+              <a href="infolivro.html" onclick="abrirlivro('livro21')">
+                <p>Mais informações <i class="fa-solid fa-angle-right"></i></p>
+              </a>
+            </article>
+
+            <article class="card-catalogo" data-typefiltro="ficc">
+              <img
+                src="imgs/infolivro/capacacadorcibernetico.jpeg"
+                alt="Capa do livro O Caçador Cibernético da Rua 13"
+              />
+              <div>
+                <p class="Ficcao">Ficção</p>
+                <h3>O Caçador Cibernético da Rua 13</h3>
+                <p>Fabio Kabral</p>
+                <p>🟢 Disponível</p>
+              </div>
+              <a href="infolivro.html" onclick="abrirlivro('livro22')">
+                <p>Mais informações <i class="fa-solid fa-angle-right"></i></p>
+              </a>
+            </article>
+
+            <article class="card-catalogo" data-typefiltro="fant">
+              <img
+                src="imgs/infolivro/capaminecraftdungeons.jpeg"
+                alt="Capa do livro Minecraft Dungeons: Rise of the Arch-Illager"
+              />
+              <div>
+                <p class="Fantasia">Fantasia</p>
+                <h3>Minecraft Dungeons: Rise of the Arch-Illager</h3>
+                <p>Matt Forbeck</p>
+                <p>🟢 Disponível</p>
+              </div>
+              <a href="infolivro.html" onclick="abrirlivro('livro23')">
+                <p>Mais informações <i class="fa-solid fa-angle-right"></i></p>
+              </a>
+            </article>
+
+            <article class="card-catalogo" data-typefiltro="ficc">
+              <img
+                src="imgs/infolivro/capajogosvorazes.jpeg"
+                alt="Capa do livro Jogos Vorazes"
+              />
+              <div>
+                <p class="Ficcao">Ficção</p>
+                <h3>Jogos Vorazes</h3>
+                <p>Suzanne Collins</p>
+                <p>🟢 Disponível</p>
+              </div>
+              <a href="infolivro.html" onclick="abrirlivro('livro24')">
+                <p>Mais informações <i class="fa-solid fa-angle-right"></i></p>
+              </a>
+            </article>
+
+            <article class="card-catalogo" data-typefiltro="fant">
+              <img
+                src="imgs/infolivro/capasenhordosaneis.jpeg"
+                alt="Capa do livro Senhor dos Aneis"
+              />
+              <div>
+                <p class="Fantasia">Fantasia</p>
+                <h3>Senhor dos Anéis</h3>
+                <p>J. R. R. Tolkien</p>
+                <p>🟢 Disponível</p>
+              </div>
+              <a href="infolivro.html" onclick="abrirlivro('livro25')">
+                <p>Mais informações <i class="fa-solid fa-angle-right"></i></p>
+              </a>
+            </article>
           </div>
         </section>
       </section>
-  </main>
+    </main>
 
-  <footer>
-    <section class="footer">
-      <p id="creditos">SJS - E.E Selim José de Salles | Biblioteca Escolar</p>
-      <article>
-        <p>Redes Sociais:</p>
-        <nav>
-          <a href="#"><i class="fa-regular fa-envelope"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        </nav>
-      </article>
-      <p>
-        <i class="fa-sharp fa-solid fa-book-open"></i>Ler é construir um
-        futuro melhor.
-      </p>
-    </section>
-  </footer>
-  <script src="script.js"></script>
-</body>
-
+    <footer>
+      <section class="footer">
+        <p id="creditos">SJS - E.E Selim José de Salles | Biblioteca Escolar</p>
+        <article>
+          <p>Redes Sociais:</p>
+          <nav>
+            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </nav>
+        </article>
+        <p>
+          <i class="fa-sharp fa-solid fa-book-open"></i>Ler é construir um
+          futuro melhor.
+        </p>
+      </section>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
