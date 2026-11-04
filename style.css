@@ -1183,7 +1183,6 @@ footer{
     .sobrenos-pt1 a{
         font-size: 0;
         display: flex;
-        gap: 3px;
         width: 30px;
     }
 
@@ -1193,6 +1192,20 @@ footer{
 
     .sobrenos-pt3{
         max-width: 40vw;
+    }
+
+    .sobrenos-pt1{
+        flex-direction: unset;
+        min-width: 80vw;
+        justify-content: center;
+        gap: 3px;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 30px auto;
+    }
+
+    .sobrenos-pt1 a{
+        padding: 10px 20px;
     }
 
     #descricao-pt2{
